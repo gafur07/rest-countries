@@ -1,0 +1,36 @@
+.home {
+	@apply bg-[#FAFAFA] min-h-[89.3vh];
+
+	&.active {
+		@apply bg-[#202c37]
+	}
+}
+
+.flag {
+	height: 200px;
+	width: 100%;
+	background-position: center;
+}
+
+@media screen and (max-width: 640px) {
+	.home {
+		.container {
+			.home-nav {
+				@apply flex-col w-full
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 425px) {
+	.home {
+		.container {
+			a {
+				img {
+					@apply w-full
+				}
+			}
+		}
+	}
+}

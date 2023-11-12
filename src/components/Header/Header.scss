@@ -1,0 +1,36 @@
+.header {
+	@apply bg-white h-[80px];
+
+	.container {
+		@apply flex justify-between items-center gap-4 my-auto h-full;
+
+		h1 {
+			@apply text-[#111517] text-[20px] font-bold
+		}
+
+		button {
+			@apply bg-gray-400 rounded-full p-2 flex justify-center items-center duration-200 hover:bg-gray-600 cursor-pointer;
+
+			i {
+				@apply text-[20px] text-white
+			}
+		}
+	}
+
+	&.active {
+		@apply bg-[#2b3945];
+		.container {	
+			h1 {
+				@apply text-[#fff]
+			}
+	
+			button {
+				@apply bg-gray-500 hover:bg-gray-300;
+	
+				i {
+					@apply text-gray-200 hover:text-gray-400
+				}
+			}
+		}
+	}
+}

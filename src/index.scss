@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.info {
+	min-height: 89.1vh
+}
+@media screen and (max-width: 768px) {
+	.info {
+		@apply py-[50px];
+		button {
+			@apply mb-[50px]
+		}
+		.flag-info {
+			@apply flex-col gap-[50px];
+			img {
+				@apply w-full h-[200px]
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.form {
+		@apply w-full
+	}
+
+	.filter {
+		@apply w-full
+	}
+}
